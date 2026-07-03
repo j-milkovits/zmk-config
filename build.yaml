@@ -15,8 +15,11 @@ include:
     shield: forager_right rgbled_adapter
   - board: seeeduino_xiao_ble
     shield: settings_reset
-  - board: nice_nano_v2
+  - board: nrf52840_mdk_usb_dongle
     shield: forager_dongle
+  - board: nrf52840_mdk_usb_dongle
+    shield: settings_reset
+    cmake-args: -DCONFIG_BUILD_OUTPUT_UF2=y -DCONFIG_FLASH=y -DCONFIG_FLASH_PAGE_LAYOUT=y -DCONFIG_FLASH_MAP=y -DCONFIG_NVS=y -DCONFIG_SETTINGS_NVS=y -DCONFIG_MPU_ALLOW_FLASH_WRITE=y
   - board: seeeduino_xiao_ble
     shield: forager_left rgbled_adapter
     cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
