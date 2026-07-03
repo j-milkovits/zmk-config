@@ -15,3 +15,11 @@ include:
     shield: forager_right rgbled_adapter
   - board: seeeduino_xiao_ble
     shield: settings_reset
+  - board: nice_nano_v2
+    shield: forager_dongle
+  - board: seeeduino_xiao_ble
+    shield: forager_left rgbled_adapter
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    artifact-name: forager_left_peripheral
+  - board: nice_nano_v2
+    shield: settings_reset
