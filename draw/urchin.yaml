@@ -72,10 +72,10 @@ layers:
   - {t: ⏎, h: FUN}
   NAV:
   - Rofi
-  - Tab Close
   - Tab ←
+  - Scroll ↑
+  - Scroll ↓
   - Tab →
-  - Tab Open
   - ''
   - Page ↓
   - Page ↑
